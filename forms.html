@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de ejemplos de formularios</title>
+</head>
+<body>
+    <!-- Comentario en español: Página con ejemplos de elementos relacionados con formularios -->
+
+    <header>
+        <h1>Formularios y controles de formulario</h1>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="inline.html">Inline</a> |
+            <a href="block.html">Block</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulario de ejemplo</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información personal</legend>
+
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"><br><br>
+
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" placeholder="usuario@ejemplo.com"><br><br>
+
+                    <label for="password">Contraseña:</label><br>
+                    <input type="password" id="password" name="password"><br><br>
+
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" id="edad" name="edad" min="0" max="120"><br><br>
+
+                    <label>Género:</label><br>
+                    <input type="radio" id="gen_m" name="genero" value="m"><label for="gen_m">Masculino</label>
+                    <input type="radio" id="gen_f" name="genero" value="f"><label for="gen_f">Femenino</label>
+                    <input type="radio" id="gen_o" name="genero" value="o"><label for="gen_o">Otro</label><br><br>
+
+                    <label for="intereses">Intereses:</label><br>
+                    <input type="checkbox" id="web" name="intereses" value="web"><label for="web"> Web</label>
+                    <input type="checkbox" id="movil" name="intereses" value="movil"><label for="movil"> Móvil</label>
+                    <input type="checkbox" id="ia" name="intereses" value="ia"><label for="ia"> IA</label><br><br>
+
+                    <label for="pais">País:</label><br>
+                    <select id="pais" name="pais">
+                        <option value="ar">Argentina</option>
+                        <option value="uy">Uruguay</option>
+                        <option value="cl">Chile</option>
+                        <option value="es">España</option>
+                    </select><br><br>
+
+                    <label for="bio">Biografía:</label><br>
+                    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Cuéntanos sobre ti"></textarea><br><br>
+
+                    <label for="nacimiento">Fecha de nacimiento:</label><br>
+                    <input type="date" id="nacimiento" name="nacimiento"><br><br>
+
+                    <label for="hora">Hora preferida:</label><br>
+                    <input type="time" id="hora" name="hora"><br><br>
+
+                    <label for="color">Color favorito:</label><br>
+                    <input type="color" id="color" name="color" value="#ff0000"><br><br>
+
+                    <label for="archivo">Subir archivo:</label><br>
+                    <input type="file" id="archivo" name="archivo"><br><br>
+
+                    <label for="numeroRango">Rango:</label><br>
+                    <input type="range" id="numeroRango" name="numeroRango" min="0" max="100" value="50"><br><br>
+
+                    <label for="busqueda">Buscar (datalist):</label><br>
+                    <input list="sugerencias" id="busqueda" name="busqueda">
+                    <datalist id="sugerencias">
+                        <option value="HTML">
+                        <option value="CSS">
+                        <option value="JavaScript">
+                    </datalist><br><br>
+n                    <button type="submit">Enviar</button>
+                    <button type="reset">Restablecer</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h2>Controles de salida y progreso</h2>
+            <label for="progreso">Progreso:</label>
+            <progress id="progreso" value="70" max="100">70%</progress><br><br>
+n            <label for="meter">Medidor (meter):</label>
+            <meter id="meter" min="0" max="100" value="0.6">60%</meter><br><br>
+
+            <label for="salida">Salida calculada:</label>
+            <output id="salida" name="salida">0</output>
+        </section>
+    </main>
+
+    <footer>
+        <p>Enlace de regreso: <a href="index.html">Volver al índice</a></p>
+    </footer>
+</body>
+</html>

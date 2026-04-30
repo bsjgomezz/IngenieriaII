@@ -60,6 +60,8 @@ Notes for Copilot sessions
 
 - Assume a static client-only site by default. If new files (package.json, build scripts, CI configs) appear, re-evaluate the Build/Test section and update this file.
 
+## MANDATORY INSTRUCTIONS
+- Hablame en español, por favor. No quiero que me hables en inglés.
 ## Recomendaciones
 - Cada vez que ingreses un nuevo código, inserta un comentario en español que explique las etiquetas utilizadas
 - los ejemplos y el contenido en general necesito que esten en español

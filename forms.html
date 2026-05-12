@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de ejemplos de formularios</title>
+    <style>
+        * {
+            color: blueviolet;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        </style>
 </head>
 <body>
     <!-- Comentario en español: Página con ejemplos de elementos relacionados con formularios -->
@@ -79,7 +86,8 @@
                         <option value="CSS">
                         <option value="JavaScript">
                     </datalist><br><br>
-n                    <button type="submit">Enviar</button>
+
+n                    <button type="submit">Enviar</button>
                     <button type="reset">Restablecer</button>
                 </fieldset>
             </form>
@@ -89,7 +97,8 @@
             <h2>Controles de salida y progreso</h2>
             <label for="progreso">Progreso:</label>
             <progress id="progreso" value="70" max="100">70%</progress><br><br>
-n            <label for="meter">Medidor (meter):</label>
+
+n            <label for="meter">Medidor (meter):</label>
             <meter id="meter" min="0" max="100" value="0.6">60%</meter><br><br>
 
             <label for="salida">Salida calculada:</label>
@@ -100,5 +109,128 @@
     <footer>
         <p>Enlace de regreso: <a href="index.html">Volver al índice</a></p>
     </footer>
+
+
+    <h2>Horario Insituto 2do TSDS</h2>
+
+<table border="5">
+	<tr>
+    	<th colspan="6">Horario Segundo TSDS</th>
+	<tr>
+    	<th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Mi&eacute;rcoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+</tr>
+
+
+
+    <tr>
+    	<td>13:10hs</td>
+        <td rowspan="1">Innov. y Desarr</td>
+        <td rowspan="1">Inglés</td>
+        <td rowspan="1">Problemática contemporanea</td>
+        <td rowspan="4">Ingeniería de Software II</td>
+        <td rowspan="9"&nbsp;></td>
+</tr>
+        
+<tr>
+<td>15:10hs</td>
+            <td rowspan="4">Estadística</td>
+            <td rowspan="8">Programacion I</td>
+        <td rowspan="5">Base de datos I</td>
+    </tr>
+    
+    
+    
+<tr>
+    <td>15:10hs</td>
+
+</tr>
+
+
+
+<tr>
+    <td>15:50hs</td>
+
+</tr>
+
+
+
+
+<tr>
+<td>16:00hs</td>
+<td rowspan="4">Prácticas Profesionalizantes
+</tr>
+
+
+<tr>
+    <td>17:20hs</td>
+
+</tr>
+
+
+
+<tr>
+<td>18:00hs</td>
+</tr>
+
+
+
+<tr>
+<td>18:40hs</td>
+
+</tr>
+
+
+
+<tr>
+    <td>19:20hs</td>
+
+</tr>
+
+
+
+<tr>
+    <td>
+    
+
+</table>
+
+<form method="get" action="https://algo.com">
+	<label for="domicilio">Ingrese su direccion:</label> 
+<input name="domicilio" id="domicilio" type="text" 
+placeholder="9 de julio..."/>
+<br/>
+<label for="fechanac">Fecha de nacimiento:</label> 
+<input name="fechanac" id="fechanac" type="date"/>
+<br/> 
+<label for="email">Correo electrónico:</label> 
+<input name="email" id="email" type="email"/>
+<br/>
+<label class="form-label" for="jugador">mejor Jugador</label>
+<select class="form-select" id="jugador" name="jugador">
+<option value="">Elegí el mejor jugador</option>
+<option value="html">Neymar Junior</option>
+<option value="css">Lionel Messi</option>
+<option value="javascript">Cristiano Ronaldo</option>
+                </select>
+<br/>
+<label class="form-label" for="marca">Marca de botines que usás</label>
+<input class="form-control" list="lista-marcas" id="marcas" name="marcas" placeholder="Elegí tu marca de botin!">
+<datalist id="lista-navegadores">
+    <option value="Nike"></option>
+    <option value="Adidas"></option>
+    <option value="Puma"></option>
+    <option value="Generica"></option>
+</datalist>
+</select>
+<br/>
+<input type="submit">
+<input type="reset">
+
+</form>
 </body>
 </html>

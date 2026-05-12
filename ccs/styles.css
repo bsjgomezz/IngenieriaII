@@ -1,4 +1,9 @@
 /*formateo los divs con fondo gris claro, bordes redondeados y un poco de espacio interno para mejorar la apariencia de los formularios, sin tocar el color de la letra*/
+div {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+}
 body {
     background-color: rosybrown;
     font-family: Arial, Helvetica, sans-serif;
